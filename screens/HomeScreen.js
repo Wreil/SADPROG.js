@@ -68,22 +68,17 @@ export default function HomeScreen() {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.navItem}
-          onPress={() => navigation.navigate("MessageScreen")} // Replace with the correct screen name
+          onPress={() => navigation.navigate("Message")} // Replace with the correct screen name
         >
           <Image
             source={require("../assets/message.png")} // Replace with your profile icon
             style={styles.navIcon}
           />
         </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.navItem}
-          onPress={() => navigation.navigate("HomeScreen")} // Replace with the correct screen name
-        >
           <Image
             source={require("../assets/home-icon.png")} // Replace with your home icon
             style={styles.navIcon}
           />
-        </TouchableOpacity>
         <TouchableOpacity
           style={styles.navItem}
           onPress={() => navigation.navigate("ShopScreen")} // Replace with the correct screen name
@@ -95,11 +90,12 @@ export default function HomeScreen() {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.navItem}
-          onPress={() => navigation.navigate("HistoryScreen")} // Replace with the correct screen name
+          onPress={() => navigation.navigate("Additem")} // Replace with the correct screen name
         >
           <Image
             source={require("../assets/history.png")} // Replace with your profile icon
             style={styles.navIcon}
+          
           />
         </TouchableOpacity>
       </View>
@@ -125,6 +121,30 @@ const mockItems = [
     image: require("../assets/seniorhigh.png"),
     title: "Senior High Uniform",
     price: 450,
+    sold: 100,
+  },
+  {
+    image: require("../assets/pencil.png"),
+    title: "Pencil",
+    price: 60,
+    sold: 25,
+  },
+  {
+    image: require("../assets/bondpaper.png"),
+    title: "Hard Copy BondPaper",
+    price: 250,
+    sold: 100,
+  },
+  {
+    image: require("../assets/yellowpad.png"),
+    title: "Yellow Pad Paper",
+    price: 25,
+    sold: 162,
+  },
+  {
+    image: require("../assets/colorpaper.png"),
+    title: "Assorted Color Paper",
+    price: 5,
     sold: 100,
   },
 ];
